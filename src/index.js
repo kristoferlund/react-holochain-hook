@@ -28,7 +28,7 @@ export const getHcOptions = async (options) => {
   } else {
     try {
       const data = await fetch(CONDUCTOR_CONFIG)
-      const json = data.json()
+      const json = await data.json()
       url = `ws://localhost:${json.dna_interface.driver.port}`
     } catch (err) {
       console.error(err)
