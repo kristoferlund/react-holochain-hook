@@ -4,7 +4,7 @@
   "description": "Provides React apps with easy access to Holochain using the useHolochain() hook",
   "main": "src/index.js",
   "author": "Kristofer Lund <kristofer@fmckl.se>",
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/kristoferlund/react-holochain-hook.git"
