@@ -154,4 +154,4 @@ Yes, please do! Raise an issue or post a pull request. Let's make working with H
 
 ## License
 
-AGPL-3.0
+MIT
