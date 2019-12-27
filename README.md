@@ -37,10 +37,15 @@ import {
 ```js
 const Connected = () => {
   const hc = useHolochain()
-  if (hc.status === CONNECTION_STATUS.CONNECTED) {
-    return <div>✅ Connected</div>
-  }
-  return null
+  const [connected, setConnected] = useState("Not connected")
+
+  useEffect(() => {
+    if (hc.status === CONNECTION_STATUS.CONNECTED) {
+      setConnected("✅ Connected")
+    }
+  }, [hc.status])
+
+  return connected
 }
 
 function App() {
